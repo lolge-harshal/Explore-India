@@ -207,40 +207,51 @@ p {
 }
 
 .footer {
-    text-align: center; /* Center the text */
-    padding: 20px; /* Space inside the footer */
-    background-color: transparent; /* Fully transparent background */
-    color: rgba(255, 255, 255, 0.9); /* Light text color with slight opacity for readability */
-    position: relative; /* Positioning context */
-    bottom: 0; /* Stick to the bottom */
-    width: 100%; /* Full width */
-    font-size: 1rem; /* Font size */
-    box-shadow: none; /* Remove any shadow */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .footer p {
-    margin: 5px 0; /* Space between footer lines */
+    margin: 5px 0;
+    max-width: 90%;
+    word-wrap: break-word;
+    line-height: 1.5;
 }
 
 .footer-link {
-    color: rgba(0, 123, 255, 0.9); /* Link color with slight opacity */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: rgba(0, 123, 255, 0.9);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: rgba(0, 204, 255, 0.9); /* Lighter blue on hover */
-    text-decoration: underline; /* Underline on hover */
+    color: rgba(0, 204, 255, 0.9);
+    text-decoration: underline;
 }
 
 /* Responsive styles */
 @media (max-width: 600px) {
     .footer {
-        font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+        max-width: 95%;
     }
 }
 
@@ -259,13 +270,11 @@ p {
     }
 }
 
-/* Default styles for larger screens */
 .explore-image {
     width: 100%;
     max-width: 500px;
 }
 
-/* Smaller devices */
 @media (max-width: 768px) {
     .explore-image {
         max-width: 80%;
