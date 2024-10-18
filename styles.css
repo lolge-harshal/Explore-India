@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('assets/web-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+header:hover {
+    background: linear-gradient(135deg, #3e3f6a, #757cbf);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #ffffff;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.explore-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cultural-highlights {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cultural-highlights h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.cultural-highlights ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cultural-highlights li {
+    font-size: 1.2rem;
+    color: #666666;
+    margin: 10px 0;
+}
+
+.landmarks {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.landmarks h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.landmark {
+    margin: 20px;
+}
+
+.landmark-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.landmark h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.landmark p {
+    font-size: 1rem;
+    color: #666666;
+}
+
+.travel-tips {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.travel-tips h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.travel-tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.travel-tips li {
+    font-size: 1.2rem;
+    color: #666666;
+    margin: 10px 0;
+}
+
+.nature-landscapes {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.nature-landscapes h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.landscape {
+    margin: 20px;
+}
+
+.landscape-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.landscape h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.landscape p {
+    font-size: 1rem;
+    color: #666666;
+}
+
+.culinary-adventures {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.culinary-adventures h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.dish {
+    margin: 20px;
+}
+
+.dish-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dish h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 10px 0;
+}
+
+.dish p {
+    font-size: 1rem;
+    color: #666666;
+}
+
+.footer {
+    text-align: center; /* Center the text */
+    padding: 20px; /* Space inside the footer */
+    background-color: transparent; /* Fully transparent background */
+    color: rgba(255, 255, 255, 0.9); /* Light text color with slight opacity for readability */
+    position: relative; /* Positioning context */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    font-size: 1rem; /* Font size */
+    box-shadow: none; /* Remove any shadow */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.footer p {
+    margin: 5px 0; /* Space between footer lines */
+}
+
+.footer-link {
+    color: rgba(0, 123, 255, 0.9); /* Link color with slight opacity */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-link:hover {
+    color: rgba(0, 204, 255, 0.9); /* Lighter blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .footer {
+        font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    header {
+        padding: 30px 10px;
+    }
+}
+
+/* Default styles for larger screens */
+.explore-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Smaller devices */
+@media (max-width: 768px) {
+    .explore-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .explore-image {
+        max-width: 70%;
+    }
+}
